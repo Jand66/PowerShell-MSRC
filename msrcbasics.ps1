@@ -14,3 +14,5 @@ $cvrfDoc.Vulnerability.Remediations | Where Type -EQ 1
 
 ### Get the Remediations of Type 'VendorFix' (2)
 $cvrfDoc.Vulnerability.Remediations | Where Type -EQ 2 
+
+$cvrfDoc | Get-MsrcVulnerabilityReportHtml | out-file -FilePath c:\jun2021.html
